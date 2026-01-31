@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Masisir — Nuqthah Learn</title>
+  <link rel="stylesheet" href="assets/style/style.css" />
+  <link rel="stylesheet" href="assets/style/jago-warna.css">
+  <link rel="stylesheet" href="assets/style/bimbel-midnav-image.css" />
+
+  <link rel="stylesheet" href="assets/style/home-top-gap.css" />
+  <link rel="stylesheet" href="assets/style/teach.css" />
+  <!-- Styles khusus halaman Materi (Online/Offline/Intensif) -->
+  <link rel="stylesheet" href="assets/style/materials.css" />
+  <link rel="stylesheet" href="assets/style/desktop-only.css">
+  <link rel="stylesheet" href="assets/style/overrides.css">
+
+
+
+  <link rel="manifest" href="./manifest.webmanifest">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="./assets/icon/icon-192.png">
+
+
+</head>
+
+<body>
+  <!---
+  <!-- Splash -->
+  <div id="splash" aria-hidden="true">
+    <div class="splash-inner">
+      <div class="splash-logo"><span class="logo-mark">N</span></div>
+      <div class="splash-text">NUQTHAH</div>
+    </div>
+  </div>
+  <div class="mobile-top-title" id="mobileTopTitle">Nuqthah Learning Center</div>
+
+
+  <!-- PATCH: LIVIN NAV START -->
+  <!-- MOBILE TOPBAR (Livin-like) -->
+  <header class="m-topbar" id="mTopbar" aria-label="Mobile top bar">
+    <div class="m-topbar-inner">
+      <button class="m-prof" type="button" data-go="home" aria-label="Profil / Home">
+        <span class="m-ava">NH</span>
+        <span class="m-prof-txt">
+          <span class="m-prof-name">NUQTHAH</span>
+          <span class="m-prof-sub">learning center</span>
+        </span>
+      </button>
+
+      <div class="m-topbar-actions">
+
+        <!-- YouTube -->
+        <a class="m-ic" href="https://youtube.com/@malakahproject?si=OwHFEiYDYSlSgAl0" target="_blank" rel="noopener"
+          aria-label="YouTube">
+          <img src="assets/icon/yt.png" alt="YouTube" class="m-ic-img">
+        </a>
+
+        <!-- Instagram -->
+        <a class="m-ic" href="https://www.instagram.com/markaznuqthah_?igsh=MTBiMmo3MXE5MDdsZA==" target="_blank"
+          rel="noopener" aria-label="Instagram">
+          <img src="assets/icon/ig.png" alt="Instagram" class="m-ic-img">
+        </a>
+
+        <!-- Whatsapp -->
+        <a class="m-ic" href="https://chat.whatsapp.com/DvjPkbyggHx8zKYu3sJjq2?mode=gi_t" target="_blank" rel="noopener"
+          aria-label="Instagram">
+          <img src="assets/icon/wa.png" alt="Whatsapp" class="m-ic-img">
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE BOTTOM NAV (Livin-like) -->
+  <nav class="m-bottom-nav" id="mBottomNav" aria-label="Mobile bottom navigation">
+    <a class="m-nav-item" href="#home" data-route="home" aria-label="Beranda">
+      <span class="m-ico">🏠</span><span class="m-txt">Beranda</span>
+    </a>
+
+    <a class="m-nav-item" href="#news" data-route="news" aria-label="Info">
+      <span class="m-ico">📰</span><span class="m-txt">Info</span>
+    </a>
+
+    <!--tombol tengah besar: BIMBEL-->
+    <a class="m-nav-mid" href="#explore" data-route="explore" aria-label="">
+      <img class="m-mid-logo" src="assets/images/bimbel2.png" alt="" />
+      <!--
+      <span class="m-mid-ico" aria-hidden="true">🎯</span>
+      <span class="m-mid-txt" aria-hidden="true">Bimbel</span>-->
+    </a>
+
+    <a class="m-nav-item" href="#market" data-route="market" aria-label="Marketplace">
+      <span class="m-ico">🛒</span><span class="m-txt">Market</span>
+    </a>
+
+    <a class="m-nav-item" href="#settings" data-route="settings" aria-label="Pengaturan">
+      <span class="m-ico">⚙️</span><span class="m-txt">Setting</span>
+    </a>
+  </nav>
+  <!-- PATCH: LIVIN NAV END -->
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="app" id="app">
+
+    <!-- Top Nav (GLOBAL) -->
+    <header class="top-nav" role="banner">
+      <div class="container">
+        <div class="nav-inner">
+
+
+          <div class="brand" role="button" tabindex="0" data-go="home" aria-label="Kembali ke Beranda">
+            <div class="brand-mark">N</div>
+            <div class="brand-text">
+              <strong>Home</strong>
+              <span>SIAP • belajar lebih mudah dan fokus.</span>
+            </div>
+          </div>
+
+          <nav class="nav-actions" aria-label="Navigasi">
+            <button class="btn btn-soft" type="button" data-go="explore" aria-label="Cari Materi">
+              <span class="ico">🔎</span>
+              <span class="lbl">Cari Materi</span>
+              <span class="kbd">E</span>
+            </button>
+
+            <button class="btn btn-soft" type="button" data-go="tips" aria-label="Tips Fokus">
+              <span class="ico">🎯</span>
+              <span class="lbl">Tips Fokus</span>
+              <span class="kbd">T</span>
+            </button>
+
+            <button class="btn btn-icon" type="button" data-go="settings" aria-label="Pengaturan" title="Pengaturan">
+              ⚙️
+            </button>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+
+    <main class="page-shell" id="pageShell">
+      <!-- HOME -->
+      <section class="route" id="route-home" data-route="home">
+
+
+        <!-- HOME PROMO SLIDER (Mobile) -->
+        <section class="home-promo-slider" aria-label="Promo">
+          <div class="container">
+            <div class="promo-track" id="promoTrack">
+              <div class="promo-slide">
+                <img src="assets/images/123.jpeg" alt="Promo 1">
+              </div>
+              <div class="promo-slide">
+                <img src="assets/images/dibuka.jpeg" alt="Promo 2">
+              </div>
+              <div class="promo-slide">
+                <img src="assets/images/nu.png" alt="Promo 3">
+              </div>
+            </div>
+
+            <div class="promo-dots" id="promoDots"></div>
+          </div>
+        </section>
+
+        <!-- 3 tombol pilihan materi (Online / Offline / Intensif)
+             Lokasi: tepat di bawah slider (sesuai kotak biru di foto)
+        -->
+        <section class="home-material-modes" aria-label="Pilih jenis bimbel">
+          <div class="container">
+            <div class="mode-actions">
+              <a class="btn btn-soft mode-btn" href="#explore" data-route="explore" aria-label="Bimbel Online">
+                <span class="ico">🌐</span>
+                <span class="lbl">Bimbel Online</span>
+              </a>
+              <a class="btn btn-soft mode-btn" href="#offline" data-route="offline" aria-label="Bimbel Offline">
+                <span class="ico">🏫</span>
+                <span class="lbl">Bimbel Offline</span>
+              </a>
+              <a class="btn btn-soft mode-btn" href="#intensif" data-route="intensif"
+                aria-label="Pembelajaran Intensif">
+                <span class="ico">⚡</span>
+                <span class="lbl">Pembelajaran Intensif</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="hero-wrap">
+          <div class="container">
+            <div class="home-grid">
+              <!-- HERO / PLATFORM CARD -->
+              <div class="card hero-card" data-area="hero">
+                <div class="hero-top">
+                  <div class="hero-copy">
+                    <!----
+                    <h1 class="hero-title">Platform pembelajaran MASISIR.</h1>
+                    <p class="hero-sub">
+                      Disini MASISIR akan lebih mudah menemukan manteri perkulian atau kajian internsif bersama
+                      <b>Nuqthah Learning Center</Center></b>.
+                    </p>
+                    --->
+                  </div>
+
+
+                </div>
+
+                <!-- QUICK FILTER -->
+                <div class="quick-filter">
+                  <div class="qf-head">
+                    <div class="qf-title"><span class="emoji">🚀</span> Filter cepat</div>
+                    <div class="qf-sub">Tap kategori untuk langsung memfilter materi di halaman “Cari Materi”.</div>
+                  </div>
+                  <div class="qf-tags" id="homeQuickChips"></div>
+                </div>
+
+
+                <!-- PROMO 
+                <div class="promo-card">
+
+                  <div class="promo-actions">
+                    <a class="btn" href="#focus" data-route="focus">Mulai Fokus</a>
+                    <a class="btn soft" href="#news" data-route="news">Info Masisir</a>
+                    <a class="btn" href="#teacher" data-route="teacher">Profil Pengajar</a>
+                    <a class="btn soft" href="#market" data-route="market">Marketplace</a>
+
+
+                  </div>
+                </div>-->
+              </div>
+
+              <!-- TEACHER REGISTRATION -->
+              <div class="card reg-card reg-teacher" data-area="teachreg">
+                <div class="reg-head">
+                  <div class="reg-title">Daftar jadi Pengajar Bimbel</div>
+                  <div class="reg-pill">Pendidikan S2 (minimal)</div>
+                </div>
+                <div class="reg-desc">Daftar ke admin untuk verifikasi. Tulis profil singkat & bidang pengajaran.</div>
+                <a class="btn primary" id="btnRegisterTeacher">Daftar jadi Pengajar disini</a>
+              </div>
+
+              <!-- TEACHER PROFILE -->
+              <div class="card teacher-profile" data-area="teacher">
+                <div class="tp-media">
+                  <img src="./assets/images/nu.png" alt="Profil pengajar"
+                    onerror="this.style.display='none'; this.parentElement.classList.add('noimg');">
+                  <!---<div class="tp-fallback">M</div>---->
+                </div>
+                <div class="tp-info-box">
+                  <div class="tp-kicker">Profil Para Pengajar </div>
+                  <div class="tp-name">Nuqthah Learning Center</Center>
+                  </div>
+                  <div class="tp-meta">Profesional • Berpengalaman • Akademisi</div>
+                  <!----
+                  <div class="tp-desc">
+                    Profil pengajar bisa kamu ganti — simpan file <b>teacher.jpg</b> di <code>assets/images</code>.
+                  </div>
+                  -->
+                  <div class="tp-actions">
+                    <a class="btn" href="#teacher" data-route="teacher">Lihat Profil Pengajar</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BENEFITS -->
+              <div class="card benefits-card" data-area="benefits">
+                <div class="benef-head">
+                  <div class="benef-title">Belajar terarah & nyaman</div>
+                  <div class="benef-sub">Fokus pada materi, minim distraksi.</div>
+                </div>
+
+                <div class="benef-list">
+                  <div class="benef-item"><span class="check">✅</span> Rencana belajar bertahap</div>
+                  <div class="benef-item"><span class="check">✅</span> Progres & catatan tersimpan</div>
+                  <div class="benef-item"><span class="check">✅</span> Preview dulu sebelum buka</div>
+                </div>
+
+                <div class="benef-actions">
+                  <a class="btn primary" href="#explore" data-route="explore">Cari Materi</a>
+                  <a class="btn" href="#focus" data-route="focus">Mode Fokus</a>
+                </div>
+              </div>
+
+              <a class="btn" href="#focus" data-route="focus">Mode Fokus</a>
+              <a class="btn soft" href="#news" data-route="news">Info Mahasiswa</a>
+
+
+              <!-- SELLER REGISTRATION -->
+              <div class="card reg-card reg-seller" data-area="sellerreg">
+                <div class="reg-head">
+                  <div class="reg-title">Daftar jadi Seller</div>
+                  <div class="reg-pill">Marketplace (tambahan)</div>
+                </div>
+                <div class="reg-desc">Jika ingin jualan di Marketplace, daftar ke admin. Sertakan juga nomor WhatsApp
+                  kamu.</div>
+                <a class="btn primary" id="btnRegisterSeller">Daftar Seller (WA Admin)</a>
+                <div class="reg-note">Catatan: foto produk bisa diupload setelah admin mengaktifkan role seller.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- TEACHER (Profil Lengkap Pengajar) -->
+        <section class="route" id="route-teacher" data-route="teacher" aria-label="Profil Pengajar">
+          <section class="section">
+            <div class="container">
+              <div class="section-title">Profil Pengajar 👨‍🏫</div>
+              <div class="panel">
+                <div class="panel-bd">
+                  <div class="teacher-profile" style="margin:0;">
+                    <div class="tp-media">
+                      <img src="./assets/images/nu.png" alt="Profil pengajar"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('noimg');">
+                      <div class="tp-fallback">M</div>
+                    </div>
+
+                    <div class="tp-info-box">
+                      <div class="tp-kicker">Pengajar</div>
+                      <div class="tp-name">Ust Alfian Qotrunnnnn. Sl.M</div>
+                      <div class="tp-meta">Bimbingan • Bahasa • Akademik</div>
+                      <!-- 
+                      <div class="tp-desc">
+                        Profil pengajar bisa kamu ganti — simpan file <b>teacher.jpg</b> di <code>assets/images</code>.
+                      </div>  -->
+                      <!-- Info lengkap (silakan tambah detail teks di sini tanpa menghapus yang lama) -->
+                      <div class="muted" style="margin-top:10px;">
+                        <b>Profil Lengkap:</b>
+                        <div style="margin-top:6px;">
+                          • Fokus: Bimbingan bahasa & akademik<br>
+                          • Metode: Terarah, bertahap, dan nyaman<br>
+                          • Catatan: Konten ini bisa kamu kembangkan sesuai kebutuhan profil
+                        </div>
+                      </div>
+
+                      <div class="tp-actions" style="margin-top:14px;">
+                        <a class="btn" href="#explore" data-route="explore">Lihat Materi</a>
+                        <a class="btn btn-soft" href="#home" data-route="home">Kembali</a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="container">
+
+
+              <div class="panel">
+                <div class="panel-bd">
+                  <div class="teacher-profile" style="margin:0;">
+                    <div class="tp-media">
+                      <img src="./assets/images/nu.png" alt="Profil pengajar"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('noimg');">
+                      <div class="tp-fallback">M</div>
+                    </div>
+
+                    <div class="tp-info-box">
+                      <div class="tp-kicker">Pengajar</div>
+                      <div class="tp-name">Ust Alfian Qotrunnnnn. Sl.M</div>
+                      <div class="tp-meta">Bimbingan • Bahasa • Akademik</div>
+
+
+                      <!-- 
+                      <div class="tp-desc">
+                        Profil pengajar bisa kamu ganti — simpan file <b>teacher.jpg</b> di <code>assets/images</code>.
+                      </div>
+-->
+                      <!-- Info lengkap (silakan tambah detail teks di sini tanpa menghapus yang lama) -->
+                      <div class="muted" style="margin-top:10px;">
+                        <b>Profil Lengkap:</b>
+                        <div style="margin-top:6px;">
+                          • Fokus: Bimbingan bahasa & akademik<br>
+                          • Metode: Terarah, bertahap, dan nyaman<br>
+                          • Catatan: Konten ini bisa kamu kembangkan sesuai kebutuhan profil
+                        </div>
+                      </div>
+
+                      <div class="tp-actions" style="margin-top:14px;">
+                        <a class="btn" href="#explore" data-route="explore">Lihat Materi</a>
+                        <a class="btn btn-soft" href="#home" data-route="home">Kembali</a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="container">
+
+
+              <div class="panel">
+                <div class="panel-bd">
+                  <div class="teacher-profile" style="margin:0;">
+                    <div class="tp-media">
+                      <img src="./assets/images/nu.png" alt="Profil pengajar"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('noimg');">
+                      <div class="tp-fallback">M</div>
+                    </div>
+
+                    <div class="tp-info-box">
+                      <div class="tp-kicker">Pengajar</div>
+                      <div class="tp-name">Ust Alfian Qotrunnnnn. Sl.M</div>
+                      <div class="tp-meta">Bimbingan • Bahasa • Akademik</div>
+
+
+                      <!-- 
+                      <div class="tp-desc">
+                        Profil pengajar bisa kamu ganti — simpan file <b>teacher.jpg</b> di <code>assets/images</code>.
+                      </div>
+-->
+                      <!-- Info lengkap (silakan tambah detail teks di sini tanpa menghapus yang lama) -->
+                      <div class="muted" style="margin-top:10px;">
+                        <b>Profil Lengkap:</b>
+                        <div style="margin-top:6px;">
+                          • Fokus: Bimbingan bahasa & akademik<br>
+                          • Metode: Terarah, bertahap, dan nyaman<br>
+                          • Catatan: Konten ini bisa kamu kembangkan sesuai kebutuhan profil
+                        </div>
+                      </div>
+
+                      <div class="tp-actions" style="margin-top:14px;">
+                        <a class="btn" href="#explore" data-route="explore">Lihat Materi</a>
+                        <a class="btn btn-soft" href="#home" data-route="home">Kembali</a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="container">
+
+
+              <div class="panel">
+                <div class="panel-bd">
+                  <div class="teacher-profile" style="margin:0;">
+                    <div class="tp-media">
+                      <img src="./assets/images/nu.png" alt="Profil pengajar"
+                        onerror="this.style.display='none'; this.parentElement.classList.add('noimg');">
+                      <div class="tp-fallback">M</div>
+                    </div>
+
+                    <div class="tp-info-box">
+                      <div class="tp-kicker">Pengajar</div>
+                      <div class="tp-name">Ust Alfian Qotrunnnnn. Sl.M</div>
+                      <div class="tp-meta">Bimbingan • Bahasa • Akademik</div>
+
+
+                      <!-- 
+                      <div class="tp-desc">
+                        Profil pengajar bisa kamu ganti — simpan file <b>teacher.jpg</b> di <code>assets/images</code>.
+                      </div>
+-->
+                      <!-- Info lengkap (silakan tambah detail teks di sini tanpa menghapus yang lama) -->
+                      <div class="muted" style="margin-top:10px;">
+                        <b>Profil Lengkap:</b>
+                        <div style="margin-top:6px;">
+                          • Fokus: Bimbingan bahasa & akademik<br>
+                          • Metode: Terarah, bertahap, dan nyaman<br>
+                          • Catatan: Konten ini bisa kamu kembangkan sesuai kebutuhan profil
+                        </div>
+                      </div>
+
+                      <div class="tp-actions" style="margin-top:14px;">
+                        <a class="btn" href="#explore" data-route="explore">Lihat Materi</a>
+                        <a class="btn btn-soft" href="#home" data-route="home">Kembali</a>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </section>
+
+
+        <footer class="container foot">
+          © <span id="year"></span> Masisir — Nuqthah Learning Center • Cairo, Mesir
+        </footer>
+      </section>
+
+
+      <!-- TEACH NEEDS / DAFTAR PENGAJAR -->
+      <section class="route" id="route-teach" data-route="teach" aria-label="Info Pengajar">
+        <div class="container">
+          <div class="section-head">
+            <h2>Materi yang akan diajarkan</h2>
+            <p class="muted">Di sini kamu bisa lihat materi apa saja yang tersedia, dan apakah masih dibutuhkan pengajar
+              untuk tiap materi.</p>
+          </div>
+
+          <div class="panel">
+            <div class="panel-bd">
+              <div id="teachNeedSummary" class="muted"></div>
+              <div class="class-grid" id="teachNeedGrid" style="margin-top:14px;"></div>
+
+              <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;">
+                <button class="btn btn-soft" type="button" data-go="home">Kembali</button>
+                <button class="btn primary" type="button" id="teachRegisterBtn">Daftar Pengajar (WA Admin)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLORE -->
+      <section class="route" id="route-explore" data-route="explore">
+        <section class="section">
+          <div class="container">
+            <!-- Sticky header (tidak ikut scroll) -->
+            <div class="explore-sticky">
+
+              <!-- PATCH: BIMBEL TABS START -->
+              <div class="bimbel-tabs" role="tablist" aria-label="Pilihan Bimbel">
+                <a class="btab" href="#explore" data-tab="explore">Bimbel Online</a>
+                <a class="btab" href="#offline" data-tab="offline">Bimbel Offline</a>
+                <a class="btab" href="#intensif" data-tab="intensif">Intensif</a>
+              </div>
+              <!-- PATCH: BIMBEL TABS END -->
+              <div class="section-title-row">
+                <div class="section-title">Cari Materi 🔎</div>
+
+              </div>
+
+              <div class="toolbar">
+                <div class="search">
+                  <div class="icon">🔎</div>
+                  <input id="searchInput" type="text" autocomplete="off" placeholder="Cari materi… " />
+                  <button class="clear" id="clearSearch" type="button" aria-label="Hapus pencarian">×</button>
+                </div>
+                <div class="toolbar-right">
+                  <button class="btn" id="resetFilters" type="button">Reset</button>
+                  <button class="btn btn-primary" type="button" data-go="learn">Mode Fokus</button>
+                </div>
+              </div>
+
+              <div class="mini-row" id="categoryChips"></div>
+            </div>
+
+            <div class="card-grid" id="classGrid" aria-label="Daftar materi"></div>
+            <div class="card-grid" id="skeletonGrid" style="display:none;"></div>
+
+            <div class="hint-foot">Tip: klik kartu untuk preview via modal (nggak langsung buka link).</div>
+          </div>
+        </section>
+      </section>
+
+      <!-- BIMBEL OFFLINE (halaman baru - mirip Explore) -->
+      <section class="route" id="route-offline" data-route="offline">
+        <section class="section">
+          <div class="container">
+            <div class="explore-sticky">
+
+              <!-- PATCH: BIMBEL TABS START -->
+              <div class="bimbel-tabs" role="tablist" aria-label="Pilihan Bimbel">
+                <a class="btab" href="#explore" data-tab="explore">Bimbel Online</a>
+                <a class="btab" href="#offline" data-tab="offline">Bimbel Offline</a>
+                <a class="btab" href="#intensif" data-tab="intensif">Intensif</a>
+              </div>
+              <!-- PATCH: BIMBEL TABS END -->
+              <div class="section-title-row">
+                <div class="section-title">Bimbel Offline 🏫</div>
+              </div>
+
+              <div class="toolbar">
+                <div class="search">
+                  <div class="icon">🔎</div>
+                  <input id="searchInputOffline" type="text" autocomplete="off" placeholder="Cari materi offline… " />
+                  <button class="clear" id="clearSearchOffline" type="button" aria-label="Hapus pencarian">×</button>
+                </div>
+                <div class="toolbar-right">
+                  <button class="btn" id="resetFiltersOffline" type="button">Reset</button>
+                  <button class="btn btn-primary" type="button" data-go="learn">Mode Fokus</button>
+                </div>
+              </div>
+
+              <div class="mini-row" id="categoryChipsOffline"></div>
+            </div>
+
+            <div class="card-grid" id="classGridOffline" aria-label="Daftar materi offline"></div>
+            <div class="card-grid" id="skeletonGridOffline" style="display:none;"></div>
+
+            <div class="hint-foot">Tip: klik kartu untuk preview via modal (nggak langsung buka link).</div>
+          </div>
+        </section>
+      </section>
+
+      <!-- PEMBELAJARAN INTENSIF (halaman baru - mirip Explore) -->
+      <section class="route" id="route-intensif" data-route="intensif">
+        <section class="section">
+          <div class="container">
+            <div class="explore-sticky">
+
+              <!-- PATCH: BIMBEL TABS START -->
+              <div class="bimbel-tabs" role="tablist" aria-label="Pilihan Bimbel">
+                <a class="btab" href="#explore" data-tab="explore">Bimbel Online</a>
+                <a class="btab" href="#offline" data-tab="offline">Bimbel Offline</a>
+                <a class="btab" href="#intensif" data-tab="intensif">Intensif</a>
+              </div>
+              <!-- PATCH: BIMBEL TABS END -->
+              <div class="section-title-row">
+                <div class="section-title">Pembelajaran Intensif ⚡</div>
+              </div>
+
+              <div class="toolbar">
+                <div class="search">
+                  <div class="icon">🔎</div>
+                  <input id="searchInputIntensif" type="text" autocomplete="off" placeholder="Cari materi intensif… " />
+                  <button class="clear" id="clearSearchIntensif" type="button" aria-label="Hapus pencarian">×</button>
+                </div>
+                <div class="toolbar-right">
+                  <button class="btn" id="resetFiltersIntensif" type="button">Reset</button>
+                  <button class="btn btn-primary" type="button" data-go="learn">Mode Fokus</button>
+                </div>
+              </div>
+
+              <div class="mini-row" id="categoryChipsIntensif"></div>
+            </div>
+
+            <div class="card-grid" id="classGridIntensif" aria-label="Daftar materi intensif"></div>
+            <div class="card-grid" id="skeletonGridIntensif" style="display:none;"></div>
+
+            <div class="hint-foot">Tip: klik kartu untuk preview via modal (nggak langsung buka link).</div>
+          </div>
+        </section>
+      </section>
+
+      <!-- TIPS -->
+      <section class="route" id="route-tips" data-route="tips">
+        <section class="section">
+          <div class="container">
+            <div class="section-title">Tips Fokus 🎯</div>
+            <div class="card-grid">
+              <div class="class-card elite" tabindex="0">
+                <div class="badge premium">FOCUS</div>
+                <h3>Ritual 7 Menit Sebelum Belajar</h3>
+                <p>Rapihin meja → set target kecil → matiin notif → minum air → buka materi. Biar otak “masuk mode”.</p>
+                <div class="meta">🧠 Fokus • ⚡ Cepat • ✅ Konsisten</div>
+              </div>
+              <div class="class-card" tabindex="0">
+                <div class="badge new">TIP</div>
+                <h3>Teknik 25/5 (Pomodoro)</h3>
+                <p>25 menit fokus, 5 menit istirahat. Ulang 3–4 ronde. Setelah itu break lebih panjang.</p>
+                <div class="meta">⏱️ Waktu • 🎯 Fokus • 🔁 Ulang</div>
+              </div>
+              <div class="class-card" tabindex="0">
+                <div class="badge popular">PRO</div>
+                <h3>Belajar “kecil tapi tiap hari”</h3>
+                <p>Lebih menang daripada nunggu mood. Target 10–15 menit pun sah, yang penting rutin.</p>
+                <div class="meta">📆 Konsisten • 📌 Ringan • 🔥 Streak</div>
+              </div>
+              <div class="class-card" tabindex="0">
+                <div class="badge new">ANTI-DRIFT</div>
+                <h3>Kalau mulai terdistraksi…</h3>
+                <p>Tulis gangguan di catatan (parking lot), balik ke materi. Otak tenang karena “nggak lupa”.</p>
+                <div class="meta">📝 Catatan • 🧊 Tenang • 🎧 Flow</div>
+              </div>
+            </div>
+
+            <div class="tips-actions">
+              <button class="btn btn-primary" type="button" data-go="learn">Praktek di Mode Fokus</button>
+              <button class="btn" type="button" data-go="explore">Cari Materi</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- LEARN (Focus Mode) -->
+      <section class="route" id="route-learn" data-route="learn">
+        <section class="section">
+          <div class="container">
+            <div class="learn-head">
+              <div>
+                <h2>Mode Fokus ✍️</h2>
+                <p>Pilih materi di kiri → preview di kanan. Catatan & progres otomatis tersimpan.</p>
+              </div>
+              <div class="learn-tools">
+                <div class="progress-mini">
+                  <span class="muted">Progres</span>
+                  <div class="bar"><i id="learnBar"></i></div>
+                  <b id="learnPct">0%</b>
+                </div>
+                <button class="btn" type="button" id="learnReset">Reset</button>
+              </div>
+            </div>
+
+            <div class="learn-layout">
+              <div class="panel">
+                <div class="panel-hd">
+                  <strong>Daftar Materi</strong>
+                  <span class="small" id="learnCount">0</span>
+                </div>
+                <div class="lesson-list" id="learnList"></div>
+              </div>
+
+              <div class="learn-main">
+                <div class="viewer">
+                  <div class="viewer-hd">
+                    <div class="title">
+                      <strong id="learnTitle">Pilih materi</strong>
+                      <span id="learnMeta">—</span>
+                    </div>
+                    <div class="viewer-actions">
+                      <button class="btn" type="button" id="learnDone">Tandai Selesai</button>
+                      <button class="btn btn-primary" type="button" id="learnOpen">Buka materi</button>
+                    </div>
+                  </div>
+                  <div class="viewer-body">
+                    <div class="viewer-empty" id="learnEmpty">Pilih satu materi untuk mulai.</div>
+                    <iframe id="learnFrame" title="Preview materi" loading="lazy" referrerpolicy="no-referrer"></iframe>
+                  </div>
+                </div>
+
+                <div class="notes panel">
+                  <div class="panel-hd">
+                    <strong>Catatan</strong>
+                    <span class="small">tersimpan</span>
+                  </div>
+                  <textarea id="learnNotes" placeholder="Tulis catatan di sini…"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- NEWS -->
+      <section class="route" id="route-news" data-route="news">
+        <section class="section">
+          <div class="container">
+            <div class="news-head">
+              <div>
+                <div class="section-title">Info Mahasiswa 🇮🇩 (Al-Azhar Cairo)</div>
+                <div class="section-sub">Kabar, pengumuman organisasi, kegiatan, dan info penting.</div>
+              </div>
+              <button class="btn btn-primary" type="button" data-go="settings">Panel Reporter</button>
+            </div>
+
+            <div class="news-filters">
+              <div class="search small">
+                <div class="icon">🔎</div>
+                <input id="newsSearch" type="text" placeholder="Cari berita…" autocomplete="off" />
+              </div>
+              <select id="orgFilter" class="select" aria-label="Filter organisasi">
+                <option value="all">Semua organisasi</option>
+              </select>
+            </div>
+
+            <div class="news-grid" id="newsGrid" aria-label="Daftar berita"></div>
+            <div class="pager">
+              <button class="btn" id="newsPrev" type="button">Sebelumnya</button>
+              <div class="muted" id="newsPageInfo">—</div>
+              <button class="btn" id="newsNext" type="button">Berikutnya</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- MARKETPLACE -->
+      <section class="route" id="route-market" data-route="market" aria-label="Marketplace">
+        <section class="section">
+          <div class="container">
+            <div class="market-head">
+              <div>
+                <div class="section-title">Marketplace — Barang & Jasa</div>
+                <div class="section-sub">Tambahan untuk kebutuhan mahasiswa. Klik produk untuk detail & foto.</div>
+              </div>
+              <button class="btn btn-primary" type="button" data-go="settings">Panel Seller</button>
+            </div>
+
+            <div class="market-tools">
+              <div class="search">
+                <div class="icon">🔎</div>
+                <input id="productSearch" type="search" placeholder="Cari produk / jasa…" autocomplete="off" />
+                <button class="clear" id="clearProductSearch" type="button" aria-label="Hapus pencarian">×</button>
+              </div>
+
+              <div class="market-filters" role="tablist" aria-label="Filter jenis">
+                <button class="chip is-active" type="button" data-filter="all">Semua</button>
+                <button class="chip" type="button" data-filter="barang">Barang</button>
+                <button class="chip" type="button" data-filter="jasa">Jasa</button>
+              </div>
+            </div>
+
+            <div class="product-grid" id="productGrid" aria-label="Daftar produk"></div>
+
+            <div class="pager">
+              <button class="btn" id="prodPrev" type="button">Sebelumnya</button>
+              <div class="muted" id="prodPageInfo">—</div>
+              <button class="btn" id="prodNext" type="button">Berikutnya</button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- SETTINGS -->
+      <section class="route" id="route-settings" data-route="settings" aria-label="Pengaturan">
+        <section class="section">
+          <div class="container">
+            <div class="section-title">Pengaturan ⚙️</div>
+
+            <div class="grid-2">
+              <div class="panel">
+                <div class="panel-hd">
+                  <strong>Tampilan</strong>
+                  <span class="small">Tema</span>
+                </div>
+                <div class="panel-bd">
+                  <div class="row-between">
+                    <div>
+                      <b>Mode gelap</b>
+                      <div class="muted">Preferensi tersimpan di perangkat.</div>
+                    </div>
+                    <button class="btn btn-soft" type="button" id="darkToggleSettings">Toggle</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="panel-hd">
+                  <strong>Admin</strong>
+                  <span class="small">Seller / Reporter</span>
+                </div>
+                <div class="panel-bd">
+                  <p class="muted">
+                    Untuk menambah produk/berita, admin harus mengaktifkan nomor WhatsApp sebagai <b>Seller</b> atau
+                    <b>Reporter</b>.
+                    Untuk sekarang, daftar ke admin dulu (WA), dan minta admin menambahkan nomor kamu ke sistem.
+                  </p>
+
+                  <div class="admin-gate">
+                    <label class="muted" for="adminWA">Nomor WhatsApp kamu</label>
+                    <input id="adminWA" class="input" type="tel" placeholder="contoh: 62812..." autocomplete="off" />
+                    <div class="admin-actions">
+                      <button class="btn" type="button" id="unlockSeller">Unlock Seller</button>
+                      <button class="btn" type="button" id="unlockReporter">Unlock Reporter</button>
+                      <button class="btn" type="button" id="lockAdmin">Lock</button>
+                    </div>
+                    <div class="muted" id="adminStatus">Status: terkunci</div>
+                  </div>
+
+                  <div class="admin-panels">
+                    <div class="admin-panel" id="sellerPanel" aria-label="Panel Seller" hidden>
+                      <div class="panel-hd2">
+                        <strong>Tambah Produk</strong>
+                        <span class="small">disimpan (hybrid)</span>
+                      </div>
+
+                      <div class="form">
+                        <input class="input" id="pName" placeholder="Nama produk/jasa" />
+                        <textarea class="input" id="pDesc" placeholder="Deskripsi singkat"></textarea>
+
+                        <div class="grid-2 tight">
+                          <input class="input" id="pPrice" placeholder="Harga (contoh: 25.000)" />
+                          <select class="select" id="pType">
+                            <option value="barang">Barang</option>
+                            <option value="jasa">Jasa</option>
+                          </select>
+                        </div>
+
+                        <input class="input" id="pSellerWA" placeholder="WA penjual (contoh: 62812...)" />
+                        <label class="muted">Foto produk (bisa lebih dari 1) — otomatis dikompres sebelum
+                          disimpan</label>
+                        <input class="input" id="pImages" type="file" accept="image/*" multiple />
+                        <button class="btn btn-primary" type="button" id="addProduct">Simpan Produk</button>
+
+                        <div class="muted">
+                          Jika gagal upload (perangkat berat / storage penuh), kirim foto ke admin untuk ditambahkan
+                          manual.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="admin-panel" id="reporterPanel" aria-label="Panel Reporter" hidden>
+                      <div class="panel-hd2">
+                        <strong>Tambah Berita</strong>
+                        <span class="small">organisasi & kategori</span>
+                      </div>
+
+                      <div class="form">
+                        <input class="input" id="nTitle" placeholder="Judul berita" />
+                        <textarea class="input" id="nBody" placeholder="Isi berita (ringkas & jelas)"></textarea>
+                        <div class="grid-2 tight">
+                          <input class="input" id="nOrg" placeholder="Nama organisasi (contoh: PPMI / DKKM / Senat)" />
+                          <input class="input" id="nField"
+                            placeholder="Bidang (contoh: sosial / pendidikan / olahraga)" />
+                        </div>
+
+                        <label class="muted">Foto berita (opsional) — otomatis dikompres</label>
+                        <input class="input" id="nImage" type="file" accept="image/*" />
+                        <button class="btn btn-primary" type="button" id="addNews">Simpan Berita</button>
+
+                        <div class="muted">
+                          Catatan reporter: sertakan <b>nama organisasi</b> & <b>bidang</b> agar berita bisa
+                          dikategorikan.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mini-actions">
+                    <button class="btn" type="button" id="btnRegisterSeller2">Daftar Seller (WA Admin)</button>
+                    <button class="btn" type="button" id="btnRegisterReporter">Daftar Reporter (WA Admin)</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <footer class="container foot subtle">
+              Tip: simpan foto profil pengajar di <b>assets/images/teacher.jpg</b>.
+            </footer>
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+    <!-- Modal (Preview: materi & produk) -->
+    <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-header">
+          <div class="modal-title">
+            <strong id="modalTitle">Preview</strong>
+            <span id="modalSubtitle">—</span>
+          </div>
+          <button class="modal-close" id="modalClose" type="button" aria-label="Tutup">×</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="preview" id="modalPreview">
+            <div class="ph" id="modalPlaceholder">Loading preview…</div>
+
+            <!-- For products: image carousel -->
+            <div class="img-carousel" id="modalCarousel" hidden>
+              <button class="ic-nav left" id="icPrev" type="button" aria-label="Sebelumnya">‹</button>
+              <img id="modalImage" alt="" loading="lazy" decoding="async" />
+              <button class="ic-nav right" id="icNext" type="button" aria-label="Berikutnya">›</button>
+              <div class="ic-dots" id="icDots" aria-hidden="true"></div>
+            </div>
+
+            <!-- For lessons: iframe -->
+            <iframe id="modalFrame" title="Preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
+          </div>
+
+          <div class="modal-info">
+            <div class="info-row">
+              <strong style="font-size:13px;">Tentang</strong>
+              <p id="modalDesc">—</p>
+            </div>
+            <div class="info-badges" id="modalBadges"></div>
+            <p class="muted" id="modalNote">Tip: gunakan preview ini untuk memastikan konten sesuai.</p>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn" id="modalCancel" type="button">Tutup</button>
+          <button class="btn btn-primary" id="modalPrimary" type="button">Aksi</button>
+          <button class="btn btn-soft" id="modalSecondary" type="button">Buka</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <div class="dotty"></div>
+      <div>
+        <strong id="toastTitle">Berhasil</strong>
+        <span id="toastMsg">—</span>
+      </div>
+      <button id="toastClose" type="button" aria-label="Tutup">×</button>
+    </div>
+
+  </div>
+
+  <script defer src="assets/js/lessons-data.js"></script>
+  <script defer src="assets/js/lessons-offline-data.js"></script>
+  <script defer src="assets/js/lessons-intensif-data.js"></script>
+  <script defer src="assets/js/news-data.js"></script>
+  <script defer src="assets/js/products-data.js"></script>
+
+  <script defer src="assets/js/desktop-only.js"></script>
+  <script defer src="assets/js/home-top-fix.js"></script>
+  <script defer src="assets/js/mobile-title-pack.js"></script>
+  <script defer src="assets/js/teacher-fix.js"></script>
+  <script defer src="assets/js/teach.js"></script>
+  <script defer src="assets/js/app.js"></script>
+
+
+
+
+
+  <script>
+    (function () {
+      const isLocal =
+        location.hostname === "localhost" ||
+        location.hostname === "127.0.0.1" ||
+        location.hostname === "" ||
+        /^192\.168\./.test(location.hostname) ||
+        /^10\./.test(location.hostname);
+
+      const params = new URLSearchParams(location.search);
+      const noSW = params.get("nosw") === "1" || localStorage.getItem("nuqthah_no_sw") === "1";
+
+      // Saat DEV: pastikan tidak ada SW nyangkut yang bikin CSS/JS tidak berubah
+      if (isLocal || noSW) {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.getRegistrations().then((regs) => regs.forEach((r) => r.unregister()));
+        }
+        return;
+      }
+
+      // Production: register SW
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./service-worker.js")
+            .catch((err) => console.error("Service Worker gagal:", err));
+        });
+      }
+    })();
+  </script>
+
+
+
+
+
+</body>
+
+</html>

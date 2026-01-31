@@ -1,0 +1,19 @@
+/* overrides.css
+   Taruh semua perubahan custom kamu di sini.
+   Pastikan file ini di-load PALING TERAKHIR (setelah desktop-only.css).
+*/
+
+/* contoh:
+:root{
+  --primary: #2563eb;
+}
+body.dark{
+  --surface: #0b1220;
+}
+*/
+
+/* Tips:
+   - Jangan pakai !important kecuali terpaksa.
+   - Kalau harus override rule yang pakai !important, naikkan spesifisitas:
+     body .route[data-route="home"] .btn.primary { ... }
+*/
